@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: aquamarine;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.heading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: #ff1a55;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
+  z-index: 5;
+}
+.pageLogo {
+  position: relative;
+  padding: 10px;
+  width: 500px;
+  height: 55px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+.pageLogo:hover {
+  padding: 5px;
+  font-size: 30px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+  list-style-type: none;
+  font-size: 15px;
+}
+li a {
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+a:hover {
+  color: blue;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 300px;
+  height: 30px;
+  position: relative;
+  top: 60px;
+  left: 0px;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 5px;
+  background-color: #24252a;
+}
+.hamburger {
+  display: none;
+}
+
+button {
+  width: 80px;
+  height: 20px;
+  font-size: 10px;
+  cursor: pointer;
+  color: #24252a;
+  background-color: yellow;
+  transition: 0.4s ease-in-out;
+}
+button:hover {
+  background-color: #24252a;
+  color: yellow;
+  border: 1px solid yellow;
+}
+
+.spanCls {
+  color: navy;
+  font-size: 12px;
+  font-weight: bold;
+}
+.sliding_window {
+  display: none;
+}
+
+.imgCntr {
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bild {
+  margin: 10px 20px;
+  margin-top: 40px;
+}
+img {
+  width: 150px;
+  height: 200px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+  transition: 0.6s ease-in-out;
+}
+img:hover {
+  translate: (45%, 45%);
+  width: 220px;
+  height: 250px;
+}
+
+.tableFrame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 20%;
+  width: 60vw;
+  height: 70vh;
+  margin-top: 200px;
+  z-index: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  overflow: hidden;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+td {
+  padding: 30px 25px;
+  font-weight: bold;
+  border-bottom: 5px solid #ff1a55;
+}
+
+th {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #fafafa;
+  background-color: #ff1a55;
+  padding: 30px 25px;
+}
+
+tr:nth-child(odd) {
+  background-color: navy;
+  color: #fafafa;
+  padding: 55px;
+}
+.totalAmount {
+  position: relative;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  left: 70%;
+
+  color: #fafafa;
+}
+.cardBody {
+  background-color: #50af55;
+}
+@media all and (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .sliding_window {
+    display: inline-block;
+    z-index: 10;
+    width: 100vw;
+    height: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 55px;
+    background-color: #ff1a55;
+    transition: 0.4s ease-in-out;
+  }
+  .addition {
+    height: 120px;
+  }
+  .sliding_window ul li {
+    padding: 15px 10%;
+  }
+  .sliding_window ul li:hover {
+    background-color: lightpink;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .hamburger {
+    display: flex;
+    list-style-type: none;
+    transition: 0.4s ease-in-out;
+  }
+  .hamburger li {
+    transition: 1s ease-in-out;
+  }
+
+  .hamburger li:hover {
+    font-size: 25px;
+    transform: rotate(360deg);
+    color: blue;
+  }
+
+  button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #24252a;
+    color: yellow;
+    border: 1px solid yellow;
+  }
+  table {
+    width: 300px;
+    margin-top: 10px;
+    left: 0;
+  }
+  .tableFrame {
+    left: 14%;
+  }
+  .totalAmount {
+    left: 50%;
+    margin-bottom: 40px;
+  }
+  .pageLogo h2 {
+    font-size: 24px;
+  }
+}
