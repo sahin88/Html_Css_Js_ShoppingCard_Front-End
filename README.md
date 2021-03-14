@@ -9,7 +9,7 @@ This is a basic Animation App
   -  Js,Html, Css
   
  
-## Live Demo [to see live demo please click](https://sahin88.github.io/Shopping_Card_JS_HTML_CSS/)
+## Live Demo [to see live demo please click](https://sahin88.github.io/Html_Css_Js_ShoppingCard_Front-End/)
 
 ##  Basic View
 ![alt text](https://github.com/sahin88/Html_Css_Js_ShoppingCard_Front-End/blob/master/Screenshot_2021-03-14%20Background%20Color%20Changing.png)
